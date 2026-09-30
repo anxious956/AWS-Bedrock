@@ -1,0 +1,31 @@
+Amazon Bedrock FAQ
+
+Q: What is Amazon Bedrock?
+A: Amazon Bedrock is a fully managed AWS service that provides access to high-performing foundation models (FMs) from Amazon and leading AI companies through a single API, along with tools to build generative AI applications with security, privacy, and responsible AI built in.
+
+Q: Which model providers are available in Amazon Bedrock?
+A: Amazon Bedrock offers models from Amazon (Titan and Nova), Anthropic (Claude), Meta (Llama), Mistral AI, Cohere, AI21 Labs, Stability AI, and other providers. Availability varies by AWS Region.
+
+Q: Do I need to manage any infrastructure to use Amazon Bedrock?
+A: No. Amazon Bedrock is serverless, so you do not provision or manage servers. You call models through the Bedrock API or console and pay for what you use.
+
+Q: What is a Knowledge Base for Amazon Bedrock?
+A: A Knowledge Base is a managed Retrieval Augmented Generation (RAG) feature. It ingests documents from a data source such as Amazon S3, splits them into chunks, converts the chunks into vector embeddings, stores them in a vector store, and retrieves relevant passages to ground model responses with citations.
+
+Q: Which vector stores can a Bedrock Knowledge Base use?
+A: Supported vector stores include Amazon S3 Vectors, Amazon OpenSearch Serverless, Amazon Aurora PostgreSQL with pgvector, Amazon Neptune Analytics, Pinecone, Redis Enterprise Cloud, and MongoDB Atlas.
+
+Q: What is Amazon Titan Text Embeddings V2?
+A: Titan Text Embeddings V2 is an Amazon embeddings model that converts text into numeric vectors for semantic search and RAG. It supports output dimensions of 256, 512, or 1024.
+
+Q: What are Guardrails for Amazon Bedrock?
+A: Guardrails let you define safeguards such as denied topics, content filters, word filters, sensitive information (PII) redaction, and contextual grounding checks, and apply them consistently across models and applications.
+
+Q: What are Agents for Amazon Bedrock?
+A: Agents for Amazon Bedrock let a foundation model break a user request into steps, call APIs or AWS Lambda functions through action groups, and query knowledge bases to complete multi-step tasks.
+
+Q: Is my data used to train the foundation models in Amazon Bedrock?
+A: No. Prompts and completions are not used to train the base models and are not shared with third-party model providers. Data is encrypted in transit and at rest and stays within the AWS Region you use.
+
+Q: How is Amazon Bedrock priced?
+A: On-demand usage is billed per input and output token (or per image for image models). Provisioned Throughput is available for committed capacity, and batch inference is offered at a discount for large offline jobs.
